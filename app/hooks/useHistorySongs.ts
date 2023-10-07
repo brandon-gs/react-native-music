@@ -3,8 +3,6 @@ import {Track} from '../types/tracks';
 import {storage} from './storage';
 import {useCallback} from 'react';
 
-storage.clearStore();
-
 export const useHistorySongs = () => {
   const [historySongs, setHistorySongs] = useMMKVStorage<Track[]>(
     'history',
